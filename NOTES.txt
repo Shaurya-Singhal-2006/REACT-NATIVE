@@ -18,3 +18,35 @@ REACT NATIVE --> <view> , <text> , <pressable>
 
 - IOS renders real IOS native conmponents
 - Android renders real native Android views
+
+
+
+1. Javascript Side --> your code(compoents,state,logic) runs in the hermes engine
+
+2. the actual UI elemets are real native platform components written in other languages
+
+
+HOW IT WORKS 
+
+1. React runs in JS runtime
+2. React native processes and prepares for native UI
+3. JSI (javascript interface) is used to cross the boundary
+4. Fabric handles the UI
+5. Turbo Modules handle APIs
+
+
+
+EXPO framework  
+
+EXPO is a framework build on top of react native that provides a set of tools and services to make
+it easier to build and deploy React native apps 
+
+
+EXPO.dev
+
+
+1. npm install --global eas-cli 
+2. npx create-expo-app learning-native 
+3. cd learning-native 
+   (to login use eas login command)
+4. eas init --id {id provided} (expo.dev)
