@@ -50,3 +50,9 @@ EXPO.dev
 3. cd learning-native 
    (to login use eas login command)
 4. eas init --id {id provided} (expo.dev)
+
+
+
+npm start (to start thr project)
+
+
