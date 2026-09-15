@@ -55,4 +55,4 @@ EXPO.dev
 
 npm start (to start thr project)
 
-
+npm run reset-project (to remove all the already existing files)
