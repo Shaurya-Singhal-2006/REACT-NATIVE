@@ -117,3 +117,106 @@ npm run reset-project
 
 # CODES 
 
+## 1. BASIC HOME SCREEN
+
+```
+import { Text, View } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+    <View>
+      <Text>Welcome to React Native!</Text>
+    </View>
+  );
+}
+```
+
+---
+
+## 2. check the platform 
+```
+import { Platform } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+    <View>
+      <Text>Welcome to React-Native!</Text>
+      <Text>Running on: {Platform.OS}</Text>
+    </View>
+  );
+}
+```
+
+---
+
+## 3. check device info 
+
+```
+import * as Device from 'expo-device';
+import { Platform, Text, View } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+    <View>
+      <Text>Welcome to React-Native!</Text>
+      <Text>Running on: {Platform.OS}</Text>
+      <Text>Device Model: {Device.modelName}</Text>
+      <Text>Device Brand: {Device.brand}</Text>
+      <Text>OS Version: {Device.osVersion}</Text>
+    </View>
+  );
+}
+```
+
+---
+
+## 4. inline styling 
+```
+import { Text, View } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>Hello World</Text>
+  </View>
+  );
+}
+```
+
+---
+
+## 5. stylehsett API
+
+```
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function HomeScreen() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Shaurya</Text>
+      <Text style={styles.date}>Monday, March 16</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#1a1a2e',
+    paddingTop: 60,
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#ffffff',
+  },
+  date: {
+    fontSize: 14,
+    color: '#a0a0b0',
+    marginTop: 4,
+    marginBottom: 30,
+  },
+});
+```
+
